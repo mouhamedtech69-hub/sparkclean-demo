@@ -1,0 +1,2871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SparkClean Pro — Premium Cleaning Services</title>
+    <meta name="description" content="SparkClean Pro delivers premium residential and commercial cleaning services with eco-friendly products and certified professionals. Trusted by thousands." />
+    <meta property="og:title" content="SparkClean Pro — Premium Cleaning Services" />
+    <meta property="og:description" content="SparkClean Pro delivers premium residential and commercial cleaning services with eco-friendly products and certified professionals. Trusted by thousands." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sparkclean.pro" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SparkClean Pro — Premium Cleaning Services" />
+    <meta name="twitter:description" content="SparkClean Pro delivers premium cleaning services with eco-friendly products and certified professionals." />
+    <link rel="canonical" href="https://sparkclean.pro" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%236C63FF'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='%23FFFFFF' font-family='Arial, sans-serif' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "SparkClean Pro",
+            "description": "Premium cleaning services delivering spotless results for residential and commercial clients.",
+            "url": "https://sparkclean.pro",
+            "telephone": "+1 (555) 987-6543",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Clean Street, Suite 400",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94105",
+                "addressCountry": "US"
+            },
+            "openingHours": "Mo-Sa 08:00-20:00",
+            "priceRange": "$$"
+        }
+    </script>
+
+    <style>
+        /* ============================================================
+                   CSS CUSTOM PROPERTIES — Easily customizable theme
+                   ============================================================ */
+        :root {
+            --color-primary: #6C63FF;
+            --color-primary-light: #8B85FF;
+            --color-primary-dark: #4A42DB;
+            --color-secondary: #FF6B6B;
+            --color-accent: #00D4AA;
+            --color-dark: #0F0E1A;
+            --color-dark-surface: #1A1932;
+            --color-dark-card: #222145;
+            --color-light: #FFFFFF;
+            --color-light-bg: #F5F6FE;
+            --color-text-primary: #0F0E1A;
+            --color-text-secondary: #4A4978;
+            --color-text-light: #FFFFFF;
+            --color-text-muted: #8886B2;
+            --color-border: rgba(108, 99, 255, 0.15);
+            --color-shadow: rgba(15, 14, 26, 0.08);
+            --color-shadow-heavy: rgba(15, 14, 26, 0.18);
+            --color-glass-bg: rgba(255, 255, 255, 0.72);
+            --color-glass-border: rgba(255, 255, 255, 0.30);
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --radius-full: 9999px;
+            --shadow-sm: 0 4px 12px var(--color-shadow);
+            --shadow-md: 0 8px 32px var(--color-shadow);
+            --shadow-lg: 0 16px 64px var(--color-shadow-heavy);
+            --shadow-glow: 0 0 60px rgba(108, 99, 255, 0.25);
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-med: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1200px;
+            --nav-height: 80px;
+            --section-padding: 100px 0;
+            --section-padding-mobile: 60px 0;
+        }
+
+        /* ============================================================
+                   RESET & BASE
+                   ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--color-text-primary);
+            background: var(--color-light-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+                   TYPOGRAPHY
+                   ============================================================ */
+        .heading-xl {
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+        }
+
+        .heading-lg {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .heading-md {
+            font-size: clamp(1.5rem, 2.5vw, 2.0rem);
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        .heading-sm {
+            font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .body-lg {
+            font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+            line-height: 1.7;
+            color: var(--color-text-secondary);
+        }
+
+        .body-md {
+            font-size: clamp(0.95rem, 1vw, 1.05rem);
+            line-height: 1.7;
+            color: var(--color-text-secondary);
+        }
+
+        .body-sm {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* ============================================================
+                   BUTTONS
+                   ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 36px;
+            border-radius: var(--radius-full);
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition-med);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            box-shadow: 0 4px 24px rgba(108, 99, 255, 0.35);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(108, 99, 255, 0.45);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background: var(--color-light);
+            color: var(--color-primary);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-dark {
+            background: var(--color-dark);
+            color: var(--color-text-light);
+        }
+
+        .btn-dark:hover {
+            background: var(--color-dark-surface);
+            transform: translateY(-2px);
+        }
+
+        .btn-sm {
+            padding: 10px 24px;
+            font-size: 0.9rem;
+        }
+
+        /* ============================================================
+                   SECTION HEADERS
+                   ============================================================ */
+        .section-header {
+            margin-bottom: 56px;
+            max-width: 640px;
+        }
+
+        .section-header .tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--color-primary);
+            background: rgba(108, 99, 255, 0.10);
+            padding: 6px 16px;
+            border-radius: var(--radius-full);
+            margin-bottom: 14px;
+        }
+
+        .section-header h2 {
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            max-width: 480px;
+        }
+
+        .section-header.text-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header.text-center p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================================
+                   NAVIGATION
+                   ============================================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(20px) saturate(1.4);
+            -webkit-backdrop-filter: blur(20px) saturate(1.4);
+            border-bottom: 1px solid var(--color-glass-border);
+            transition: var(--transition-med);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.94);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--color-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-logo svg {
+            width: 36px;
+            height: 36px;
+        }
+
+        .nav-logo span {
+            color: var(--color-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: var(--transition-fast);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links .btn {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--color-dark);
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+
+        .nav-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+                   HERO
+                   ============================================================ */
+        .hero {
+            padding: calc(var(--nav-height) + 60px) 0 80px;
+            background: linear-gradient(160deg, #F5F6FE 0%, #EDEEFC 50%, #E4E3FA 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -20%;
+            width: 60%;
+            height: 140%;
+            background: radial-gradient(ellipse, rgba(108, 99, 255, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 .highlight {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-content h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            right: 0;
+            height: 12px;
+            background: rgba(108, 99, 255, 0.20);
+            border-radius: 4px;
+            z-index: -1;
+        }
+
+        .hero-content p {
+            font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+            color: var(--color-text-secondary);
+            max-width: 480px;
+            margin-bottom: 32px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            padding-top: 8px;
+        }
+
+        .hero-stats .stat h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            line-height: 1.2;
+        }
+
+        .hero-stats .stat p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin: 0;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 520px;
+            aspect-ratio: 1 / 1;
+            border-radius: var(--radius-lg);
+            background: linear-gradient(145deg, var(--color-primary), var(--color-primary-light));
+            padding: 8px;
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            overflow: hidden;
+        }
+
+        .hero-image-wrapper .inner {
+            width: 100%;
+            height: 100%;
+            border-radius: calc(var(--radius-lg) - 4px);
+            background: var(--color-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .hero-image-wrapper .inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: calc(var(--radius-lg) - 4px);
+        }
+
+        /* floating elements */
+        .float-el {
+            position: absolute;
+            border-radius: var(--radius-md);
+            background: var(--color-glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--color-glass-border);
+            padding: 16px 20px;
+            box-shadow: var(--shadow-md);
+            font-size: 0.85rem;
+            font-weight: 500;
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .float-el-1 {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .float-el-2 {
+            bottom: 10%;
+            left: -12%;
+            animation-delay: 2s;
+        }
+
+        .float-el-3 {
+            top: 50%;
+            left: -18%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        /* ============================================================
+                   TRUST BADGES
+                   ============================================================ */
+        .trust-badges {
+            padding: 40px 0;
+            background: var(--color-light);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .trust-badges .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .trust-badges .badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        .trust-badges .badge svg {
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+                   STATISTICS
+                   ============================================================ */
+        .stats-section {
+            padding: var(--section-padding);
+            background: var(--color-light);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stats-grid .stat-card {
+            text-align: center;
+            padding: 32px 16px;
+            border-radius: var(--radius-md);
+            background: var(--color-light-bg);
+            transition: var(--transition-med);
+        }
+
+        .stats-grid .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stats-grid .stat-card .number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+
+        .stats-grid .stat-card .label {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            margin-top: 4px;
+        }
+
+        /* ============================================================
+                   ABOUT
+                   ============================================================ */
+        .about {
+            padding: var(--section-padding);
+            background: var(--color-light-bg);
+        }
+
+        .about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background: var(--color-light);
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .about-content .about-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+
+        .about-content .about-features li svg {
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+                   SERVICES
+                   ============================================================ */
+        .services {
+            padding: var(--section-padding);
+            background: var(--color-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            padding: 36px 28px;
+            border-radius: var(--radius-md);
+            background: var(--color-light-bg);
+            border: 1px solid var(--color-border);
+            transition: var(--transition-med);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            opacity: 0;
+            transition: var(--transition-med);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+            color: var(--color-primary);
+        }
+
+        .service-card .icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* ============================================================
+                   BENEFITS
+                   ============================================================ */
+        .benefits {
+            padding: var(--section-padding);
+            background: var(--color-dark);
+            color: var(--color-text-light);
+        }
+
+        .benefits .section-header .tag {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--color-primary-light);
+        }
+
+        .benefits .section-header h2 {
+            color: var(--color-text-light);
+        }
+
+        .benefits .section-header p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .benefit-card {
+            padding: 32px 24px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition-med);
+            backdrop-filter: blur(4px);
+        }
+
+        .benefit-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .benefit-card .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 12px;
+            color: var(--color-primary-light);
+        }
+
+        .benefit-card .icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .benefit-card h4 {
+            color: var(--color-text-light);
+            margin-bottom: 6px;
+        }
+
+        .benefit-card p {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.95rem;
+        }
+
+        /* ============================================================
+                   WHY CHOOSE US
+                   ============================================================ */
+        .why-choose {
+            padding: var(--section-padding);
+            background: var(--color-light-bg);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 32px 20px;
+            border-radius: var(--radius-md);
+            background: var(--color-light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-med);
+        }
+
+        .why-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .why-item .number-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: var(--color-text-light);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+
+        .why-item h4 {
+            margin-bottom: 4px;
+        }
+
+        /* ============================================================
+                   PROCESS
+                   ============================================================ */
+        .process {
+            padding: var(--section-padding);
+            background: var(--color-light);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 48px;
+            left: 12%;
+            right: 12%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+            opacity: 0.2;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step h4 {
+            margin-bottom: 4px;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* ============================================================
+                   PORTFOLIO
+                   ============================================================ */
+        .portfolio {
+            padding: var(--section-padding);
+            background: var(--color-light-bg);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .portfolio-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 4 / 3;
+            background: var(--color-light);
+            cursor: pointer;
+            transition: var(--transition-med);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-item .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(15, 14, 26, 0.70) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            color: var(--color-text-light);
+            transition: var(--transition-med);
+        }
+
+        .portfolio-item .overlay h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .portfolio-item .overlay p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* ============================================================
+                   TESTIMONIALS
+                   ============================================================ */
+        .testimonials {
+            padding: var(--section-padding);
+            background: var(--color-light);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .testimonial-card {
+            padding: 32px 28px;
+            border-radius: var(--radius-md);
+            background: var(--color-light-bg);
+            border: 1px solid var(--color-border);
+            transition: var(--transition-med);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .testimonial-card .stars {
+            color: #F5A623;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 1rem;
+            color: var(--color-text-primary);
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card .author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testimonial-card .author .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-light);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .testimonial-card .author .info h5 {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-card .author .info p {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ============================================================
+                   PRICING
+                   ============================================================ */
+        .pricing {
+            padding: var(--section-padding);
+            background: var(--color-light-bg);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .pricing-card {
+            padding: 40px 32px;
+            border-radius: var(--radius-md);
+            background: var(--color-light);
+            border: 1px solid var(--color-border);
+            text-align: center;
+            transition: var(--transition-med);
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 1px var(--color-primary), var(--shadow-md);
+        }
+
+        .pricing-card.featured .badge {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 4px 14px;
+            border-radius: var(--radius-full);
+            margin-bottom: 12px;
+        }
+
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-dark);
+            margin: 8px 0 4px;
+        }
+
+        .pricing-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color-text-muted);
+        }
+
+        .pricing-card .plan-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        .pricing-card ul {
+            margin: 24px 0 32px;
+            text-align: left;
+        }
+
+        .pricing-card ul li {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-card ul li svg {
+            flex-shrink: 0;
+        }
+
+        .pricing-card ul li .muted {
+            color: var(--color-text-muted);
+            text-decoration: line-through;
+        }
+
+        /* ============================================================
+                   FAQ
+                   ============================================================ */
+        .faq {
+            padding: var(--section-padding);
+            background: var(--color-light);
+        }
+
+        .faq-list {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--color-border);
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item .question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--color-text-primary);
+            padding: 4px 0;
+            user-select: none;
+            transition: var(--transition-fast);
+        }
+
+        .faq-item .question:hover {
+            color: var(--color-primary);
+        }
+
+        .faq-item .question .icon {
+            font-size: 1.4rem;
+            transition: var(--transition-fast);
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+
+        .faq-item.active .question .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-item .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition-med);
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-item.active .answer {
+            max-height: 300px;
+            padding-top: 12px;
+        }
+
+        /* ============================================================
+                   CTA BANNER
+                   ============================================================ */
+        .cta-banner {
+            padding: 80px 0;
+            background: linear-gradient(145deg, var(--color-primary), var(--color-primary-dark));
+            color: var(--color-text-light);
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 520px;
+            margin: 0 auto 28px;
+        }
+
+        .cta-banner .btn-white {
+            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ============================================================
+                   CONTACT
+                   ============================================================ */
+        .contact {
+            padding: var(--section-padding);
+            background: var(--color-light-bg);
+        }
+
+        .contact .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-form {
+            background: var(--color-light);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            color: var(--color-text-primary);
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-family);
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+            background: var(--color-light-bg);
+            color: var(--color-text-primary);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.10);
+            background: var(--color-light);
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--color-light);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-info .info-item .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+        }
+
+        .contact-info .info-item .icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact-info .info-item h5 {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-info .info-item p {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* Google Maps iframe */
+        .map-container {
+            margin-top: 20px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 220px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ============================================================
+                   NEWSLETTER
+                   ============================================================ */
+        .newsletter {
+            padding: 60px 0;
+            background: var(--color-dark);
+            color: var(--color-text-light);
+        }
+
+        .newsletter .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        .newsletter .text h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .newsletter .text p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 18px;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--color-text-light);
+            font-family: var(--font-family);
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .newsletter-form .btn {
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+                   FOOTER
+                   ============================================================ */
+        .footer {
+            padding: 48px 0 24px;
+            background: var(--color-dark);
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--color-text-light);
+        }
+
+        .footer .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.95rem;
+            max-width: 280px;
+            margin-top: 8px;
+        }
+
+        .footer h5 {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            color: var(--color-text-light);
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer ul li a {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            transition: var(--transition-fast);
+        }
+
+        .footer ul li a:hover {
+            color: var(--color-primary-light);
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.30);
+        }
+
+        /* ============================================================
+                   FLOATING BUTTONS
+                   ============================================================ */
+        .float-buttons {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .float-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-med);
+            color: var(--color-text-light);
+            text-decoration: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.08);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .float-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .float-btn.whatsapp svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .float-btn.call {
+            background: var(--color-primary);
+        }
+
+        .float-btn.call svg {
+            width: 28px;
+            height: 28px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .float-btn.back-top {
+            background: var(--color-dark);
+            font-size: 1.2rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(16px);
+        }
+
+        .float-btn.back-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .float-btn.back-top svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        /* ============================================================
+                   REVEAL ANIMATIONS
+                   ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ============================================================
+                   RESPONSIVE
+                   ============================================================ */
+
+        /* 1024px */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer .container {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            .process-steps::before {
+                display: none;
+            }
+        }
+
+        /* 768px */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.96);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 28px 24px;
+                gap: 20px;
+                border-bottom: 1px solid var(--color-border);
+                transform: translateY(-120%);
+                transition: var(--transition-med);
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+                gap: 32px;
+            }
+
+            .hero-image-wrapper {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+
+            .float-el {
+                display: none;
+            }
+
+            .about .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image {
+                aspect-ratio: 16 / 10;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .contact .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-form {
+                padding: 28px 20px;
+            }
+
+            .footer .container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .newsletter .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .newsletter-form {
+                max-width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .newsletter-form input {
+                flex: 1 1 100%;
+            }
+
+            .newsletter-form .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+
+            .about-content .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-badges .container {
+                justify-content: center;
+            }
+        }
+
+        /* 414px and below */
+        @media (max-width: 414px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: calc(var(--nav-height) + 40px) 0 48px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+
+            .hero-stats .stat h3 {
+                font-size: 1.6rem;
+            }
+
+            .hero-image-wrapper {
+                max-width: 100%;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .stats-grid .stat-card .number {
+                font-size: 2.2rem;
+            }
+
+            .pricing-card {
+                padding: 28px 20px;
+            }
+
+            .footer .container {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .float-buttons {
+                bottom: 16px;
+                right: 16px;
+                gap: 10px;
+            }
+
+            .float-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section-header {
+                margin-bottom: 36px;
+            }
+
+            .cta-banner {
+                padding: 48px 0;
+            }
+        }
+
+        /* 320px */
+        @media (max-width: 360px) {
+            .heading-xl {
+                font-size: 2rem;
+            }
+            .heading-lg {
+                font-size: 1.6rem;
+            }
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-badges .badge {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="nav-logo" aria-label="SparkClean Pro home">
+                <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="#6C63FF"/>
+                    <text x="18" y="26" font-size="20" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">S</text>
+                </svg>
+                <span>SparkClean Pro</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="#pricing" role="menuitem">Pricing</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none"><a href="#contact" class="btn btn-primary btn-sm" role="menuitem">Book Now</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main id="main-content">
+
+        <!-- ============================================================
+        HERO
+        ============================================================ -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="heading-xl" id="hero-title">
+                        Premium <span class="text-gradient">Cleaning</span><br />
+                        Services <span class="highlight">You Can Trust</span>
+                    </h1>
+                    <p>
+                        SparkClean Pro delivers spotless, eco‑friendly cleaning solutions with state‑of‑the‑art equipment and vetted professionals. Trusted by thousands of homes and businesses.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Book Your Clean</a>
+                        <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3><span class="counter" data-target="10">0</span>+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3><span class="counter" data-target="98">0</span>%</h3>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3><span class="counter" data-target="5">0</span>K+</h3>
+                            <p>Properties Cleaned</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="inner">
+                            <!-- HERO IMAGE – Replace with your own image -->
+                            <img src="https://images.unsplash.com/photo-1581578731548-1a13f3d1f4f8?w=600&h=600&fit=crop&auto=format" alt="SparkClean Pro cleaning service" loading="lazy" fetchpriority="high" />
+                        </div>
+
+                        <!-- Floating elements -->
+                        <div class="float-el float-el-1">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 22v-4M4 12H2M22 12h-2M19.07 4.93l-2.83 2.83M6.34 17.66l-2.83 2.83M19.07 19.07l-2.83-2.83M6.34 6.34L3.51 3.51"/></svg>
+                            Eco‑Friendly
+                        </div>
+                        <div class="float-el float-el-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            Fast & Efficient
+                        </div>
+                        <div class="float-el float-el-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Certified Pros
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        TRUST BADGES
+        ============================================================ -->
+        <section class="trust-badges" aria-label="Trust badges">
+            <div class="container">
+                <div class="badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    Certified Eco‑Friendly
+                </div>
+                <div class="badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    24/7 Priority Support
+                </div>
+                <div class="badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Fully Insured & Bonded
+                </div>
+                <div class="badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    100% Satisfaction Guarantee
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STATISTICS
+        ============================================================ -->
+        <section class="stats-section" aria-label="Key statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <div class="number"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-1">
+                        <div class="number"><span class="counter" data-target="450">0</span>+</div>
+                        <div class="label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-2">
+                        <div class="number"><span class="counter" data-target="1200">0</span>+</div>
+                        <div class="label">Properties Cleaned</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-3">
+                        <div class="number"><span class="counter" data-target="98">0</span>%</div>
+                        <div class="label">Client Retention Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        ABOUT
+        ============================================================ -->
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-image reveal">
+                    <!-- ABOUT IMAGE – Replace with your own image -->
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94dccd991?w=800&h=600&fit=crop&auto=format" alt="SparkClean Pro team" loading="lazy" />
+                </div>
+                <div class="about-content reveal">
+                    <div class="section-header">
+                        <span class="tag">About Us</span>
+                        <h2 class="heading-lg" id="about-title">We Turn Messy Spaces Into <span class="text-gradient">Sparkling Clean</span></h2>
+                        <p class="body-md">
+                            SparkClean Pro isn’t just another cleaning service — we’re a team of dedicated professionals who take pride in making every space shine. From our meticulously trained staff to our eco‑friendly cleaning products, every detail is chosen to give you a spotless home or office without the harsh chemicals. We’ve been serving the Bay Area for over a decade, and we’re not satisfied until you are.
+                        </p>
+                    </div>
+                    <ul class="about-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            Award‑Winning Service
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            Eco‑Friendly Products
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            Highly Trained Staff
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            Flexible Scheduling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SERVICES
+        ============================================================ -->
+        <section class="services" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Our Services</span>
+                    <h2 class="heading-lg" id="services-title">Premier Cleaning,<br /><span class="text-gradient">Exceptional Results</span></h2>
+                    <p class="body-md">We combine professional expertise with eco‑conscious products to deliver a spotless experience every time.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l2-2m-2 2v12m-2-2l2-2m0 0l2 2"/><path d="M21 12l-2-2m0 0l-2-2m2 2v12m2-2l-2-2m0 0l-2 2"/><path d="M12 3v2m0 16v-2"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Residential Cleaning</h3>
+                        <p>Tailored cleaning for your home — whether it’s a weekly tidy‑up or a full deep clean, we work around your schedule.</p>
+                    </div>
+                    <div class="service-card reveal reveal-delay-1">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Commercial Cleaning</h3>
+                        <p>Keep your office or retail space looking sharp. We handle everything from daily maintenance to periodic deep cleans.</p>
+                    </div>
+                    <div class="service-card reveal reveal-delay-2">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 22v-4M4 12H2M22 12h-2M19.07 4.93l-2.83 2.83M6.34 17.66l-2.83 2.83M19.07 19.07l-2.83-2.83M6.34 6.34L3.51 3.51"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Deep Cleaning</h3>
+                        <p>Our intensive deep clean tackles every corner — from baseboards to ceiling fans — removing built‑up grime and allergens.</p>
+                    </div>
+                    <div class="service-card reveal reveal-delay-3">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 2v4M16 2v4"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Move In / Move Out</h3>
+                        <p>Make your transition stress‑free. We’ll leave your new home or office spotless so you can focus on the exciting part.</p>
+                    </div>
+                    <div class="service-card reveal reveal-delay-4">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Office Cleaning</h3>
+                        <p>A clean office boosts productivity and morale. We offer flexible after‑hours or weekend cleaning to avoid disruption.</p>
+                    </div>
+                    <div class="service-card reveal reveal-delay-4">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2"/><path d="M12 2v12"/><rect x="2" y="10" width="20" height="4" rx="1"/></svg>
+                        </div>
+                        <h3 class="heading-sm">Window Cleaning</h3>
+                        <p>Crystal‑clear windows that let the light in. We use safe, streak‑free methods that make your property shine inside and out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        BENEFITS
+        ============================================================ -->
+        <section class="benefits" aria-labelledby="benefits-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="tag">Why SparkClean</span>
+                    <h2 class="heading-lg" id="benefits-title">Built for <span class="text-gradient">Peace of Mind</span></h2>
+                    <p>Every clean we deliver is designed to make your life easier and your space healthier.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card reveal">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        </div>
+                        <h4>Eco‑Friendly Products</h4>
+                        <p>We use safe, sustainable cleaning solutions that protect your health and the planet — no harsh fumes, no dangerous residues.</p>
+                    </div>
+                    <div class="benefit-card reveal reveal-delay-1">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <h4>Trained & Vetted Staff</h4>
+                        <p>Every SparkClean Pro professional undergoes rigorous training and background checks, so you know you’re in good hands.</p>
+                    </div>
+                    <div class="benefit-card reveal reveal-delay-2">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                        <h4>100% Satisfaction</h4>
+                        <p>We don’t stop until you’re thrilled. If something isn’t right, we’ll come back and make it right — no questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        WHY CHOOSE US
+        ============================================================ -->
+        <section class="why-choose" aria-labelledby="why-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Why Choose Us</span>
+                    <h2 class="heading-lg" id="why-title">The SparkClean <span class="text-gradient">Difference</span></h2>
+                    <p class="body-md">We don’t just clean — we deliver an experience of quality, reliability, and care.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-item reveal">
+                        <div class="number-circle">1</div>
+                        <h4 class="heading-sm">Premium Quality</h4>
+                        <p class="body-sm">Meticulous attention to detail using industry‑leading equipment and methods.</p>
+                    </div>
+                    <div class="why-item reveal reveal-delay-1">
+                        <div class="number-circle">2</div>
+                        <h4 class="heading-sm">Reliable & Punctual</h4>
+                        <p class="body-sm">We show up on time, every time — because your schedule matters.</p>
+                    </div>
+                    <div class="why-item reveal reveal-delay-2">
+                        <div class="number-circle">3</div>
+                        <h4 class="heading-sm">Affordable Pricing</h4>
+                        <p class="body-sm">Premium service at competitive rates with no hidden fees or surprise charges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        WORKING PROCESS
+        ============================================================ -->
+        <section class="process" aria-labelledby="process-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Our Process</span>
+                    <h2 class="heading-lg" id="process-title">How We <span class="text-gradient">Clean</span></h2>
+                    <p class="body-md">A simple, transparent process that ensures a spotless result every time.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
+                        <h4 class="heading-sm">Book Online</h4>
+                        <p class="body-sm">Choose your service, pick a time that works for you, and get a transparent quote instantly.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-1">
+                        <div class="step-number">2</div>
+                        <h4 class="heading-sm">Assess & Plan</h4>
+                        <p class="body-sm">Our expert team reviews your needs and creates a tailored cleaning plan.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-2">
+                        <div class="step-number">3</div>
+                        <h4 class="heading-sm">Deep Clean</h4>
+                        <p class="body-sm">Our vetted professionals execute the clean using premium eco‑friendly products.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-3">
+                        <div class="step-number">4</div>
+                        <h4 class="heading-sm">Final Inspection</h4>
+                        <p class="body-sm">We perform a rigorous quality check to ensure your absolute satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PORTFOLIO
+        ============================================================ -->
+        <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Our Work</span>
+                    <h2 class="heading-lg" id="portfolio-title">Selected <span class="text-gradient">Projects</span></h2>
+                    <p class="body-md">A showcase of the pristine environments we've helped create for our valued clients.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=450&fit=crop&auto=format" alt="Luxury Apartment Deep Clean" loading="lazy" />
+                        <div class="overlay">
+                            <h4>Luxury Apartment Deep Clean</h4>
+                            <p>Residential &amp; deep cleaning</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=450&fit=crop&auto=format" alt="Corporate Office Maintenance" loading="lazy" />
+                        <div class="overlay">
+                            <h4>Corporate Office Maintenance</h4>
+                            <p>Commercial &amp; office cleaning</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1627891230063-0d0a0e56d9dd?w=600&h=450&fit=crop&auto=format" alt="Post‑Renovation Cleanup" loading="lazy" />
+                        <div class="overlay">
+                            <h4>Post‑Renovation Cleanup</h4>
+                            <p>Move in / out &amp; deep clean</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        TESTIMONIALS
+        ============================================================ -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Testimonials</span>
+                    <h2 class="heading-lg" id="testimonials-title">What Our Clients <span class="text-gradient">Say</span></h2>
+                    <p class="body-md">Real feedback from the homeowners and businesses we've had the privilege to serve.</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"SparkClean transformed our home. It hasn't been this spotless since we moved in. The attention to detail was incredible."</blockquote>
+                        <div class="author">
+                            <div class="avatar">M</div>
+                            <div class="info">
+                                <h5>Maria & John Davis</h5>
+                                <p>Homeowners, San Francisco</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal reveal-delay-1">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"We rely on SparkClean for our office. They are punctual, professional, and always leave our space smelling fresh."</blockquote>
+                        <div class="author">
+                            <div class="avatar">D</div>
+                            <div class="info">
+                                <h5>David Chen</h5>
+                                <p>Operations Manager, FinSecure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal reveal-delay-2">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"The move‑out clean was flawless. We got our full deposit back thanks to SparkClean's thorough work."</blockquote>
+                        <div class="author">
+                            <div class="avatar">E</div>
+                            <div class="info">
+                                <h5>Emily White</h5>
+                                <p>Real Estate Agent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PRICING
+        ============================================================ -->
+        <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">Pricing</span>
+                    <h2 class="heading-lg" id="pricing-title">Simple, <span class="text-gradient">Transparent</span> Plans</h2>
+                    <p class="body-md">Choose the cleaning package that fits your needs. All plans include our satisfaction guarantee.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal">
+                        <div class="plan-name">Starter</div>
+                        <div class="price">$99 <span>/ session</span></div>
+                        <ul>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Standard Home Clean
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Eco‑Friendly Products
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Trained Professional
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                30‑Day Re‑clean Guarantee
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary btn-sm" style="width:100%;justify-content:center;">Book Now</a>
+                    </div>
+
+                    <div class="pricing-card featured reveal reveal-delay-1">
+                        <div class="badge">Most Popular</div>
+                        <div class="plan-name">Premium</div>
+                        <div class="price">$199 <span>/ session</span></div>
+                        <ul>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Deep Clean + Sanitization
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Windows &amp; High Areas
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Premium Eco‑Friendly Line
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                60‑Day Re‑clean Guarantee
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Priority Scheduling
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Book Now</a>
+                    </div>
+
+                    <div class="pricing-card reveal reveal-delay-2">
+                        <div class="plan-name">Enterprise</div>
+                        <div class="price">Custom</div>
+                        <ul>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Tailored Commercial Plans
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Regular Maintenance Schedules
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Dedicated Account Manager
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                24/7 On‑Demand Support
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                Custom Eco Solutions
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary btn-sm" style="width:100%;justify-content:center;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FAQ
+        ============================================================ -->
+        <section class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="tag">FAQ</span>
+                    <h2 class="heading-lg" id="faq-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                    <p class="body-md">Everything you need to know before booking your SparkClean Pro service.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item active reveal">
+                        <div class="question" role="button" tabindex="0">
+                            What cleaning products do you use?
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="answer">
+                            We use only premium, eco‑friendly, non‑toxic cleaning products that are safe for children, pets, and the environment. No harsh chemicals, no strong odors.
+                        </div>
+                    </div>
+                    <div class="faq-item reveal reveal-delay-1">
+                        <div class="question" role="button" tabindex="0">
+                            Do you offer same‑day service?
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="answer">
+                            Yes! We keep a dedicated team on standby for urgent requests. Call us before 10 AM to check availability for same‑day booking.
+                        </div>
+                    </div>
+                    <div class="faq-item reveal reveal-delay-2">
+                        <div class="question" role="button" tabindex="0">
+                            Are your cleaners insured and bonded?
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="answer">
+                            Absolutely. Every SparkClean Pro professional is fully insured, bonded, and undergoes rigorous background checks for your peace of mind.
+                        </div>
+                    </div>
+                    <div class="faq-item reveal reveal-delay-3">
+                        <div class="question" role="button" tabindex="0">
+                            How do I book a cleaning session?
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="answer">
+                            You can book instantly through our online form, call our 24/7 support line, or send us an email. We'll confirm your schedule within 1 hour.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CTA BANNER
+        ============================================================ -->
+        <section class="cta-banner" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 class="heading-lg" id="cta-title">Ready for a <span style="color:rgba(255,255,255,0.5);">Spotless</span> Home?</h2>
+                <p>Book your SparkClean Pro session today and experience the difference of premium, eco‑friendly cleaning.</p>
+                <a href="#contact" class="btn btn-white">Book Your Clean Now →</a>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CONTACT
+        ============================================================ -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-form reveal">
+                    <div class="section-header" style="margin-bottom:28px;">
+                        <span class="tag">Get In Touch</span>
+                        <h2 class="heading-md" id="contact-title">Let's <span class="text-gradient">Clean</span></h2>
+                        <p class="body-sm">Fill out the form and we'll confirm your booking within 24 hours.</p>
+                    </div>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                                <option value="move">Move In / Move Out</option>
+                                <option value="office">Office Cleaning</option>
+                                <option value="window">Window Cleaning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your space and needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                    <div id="formSuccess" style="display:none;margin-top:16px;padding:16px 20px;background:#00D4AA20;border-radius:var(--radius-sm);color:#00D4AA;font-weight:500;text-align:center;" aria-live="polite">
+                        ✓ Thank you! We'll confirm your booking shortly.
+                    </div>
+                </div>
+
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h5>Office</h5>
+                            <p>123 Clean Street, Suite 400<br />San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p>hello@sparkclean.pro</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h5>Hours</h5>
+                            <p>Mon – Sat, 8:00 AM – 8:00 PM PST</p>
+                        </div>
+                    </div>
+
+                    <!-- REAL GOOGLE MAPS iframe – Replace with your own embed URL -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.372983320638!2d-122.4194152846813!3d37.77492927975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1a8f3f3f%3A0x7c7c7c7c7c7c7c7c!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1620000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing SparkClean Pro office location"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        NEWSLETTER
+        ============================================================ -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="text">
+                    <h3 id="newsletter-title">Stay in the Loop</h3>
+                    <p>Get exclusive cleaning tips, promotions, and eco‑friendly updates.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" />
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" style="color:var(--color-text-light);">
+                    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;">
+                        <circle cx="18" cy="18" r="18" fill="#6C63FF"/>
+                        <text x="18" y="26" font-size="20" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">S</text>
+                    </svg>
+                    <span>SparkClean Pro</span>
+                </a>
+                <p>Premium cleaning services for the modern home and office. Built with care in San Francisco.</p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="#services">Residential Cleaning</a></li>
+                    <li><a href="#services">Commercial Cleaning</a></li>
+                    <li><a href="#services">Deep Cleaning</a></li>
+                    <li><a href="#services">Move In / Out</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SparkClean Pro. All rights reserved. Crafted with ✦ care.
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    FLOATING BUTTONS
+    ============================================================ -->
+    <div class="float-buttons">
+        <a href="https://wa.me/15559876543" target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="Contact via WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.526 3.66 1.444 5.174L2 22l4.868-1.416A9.983 9.983 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </a>
+        <a href="tel:+15559876543" class="float-btn call" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+        <button class="float-btn back-top" id="backTop" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+    </div>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        /* ============================================================
+               SCRIPT.JS — Premium functionality for SparkClean Pro
+               ============================================================ */
+
+        (function() {
+            'use strict';
+
+            // ---------- NAVIGATION ----------
+            const navbar = document.getElementById('navbar');
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            // Toggle mobile menu
+            navToggle.addEventListener('click', function() {
+                const isOpen = navLinks.classList.toggle('open');
+                navToggle.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            // Close menu on link click (mobile)
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('open');
+                    navToggle.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Scroll effect
+            let lastScroll = 0;
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                lastScroll = currentScroll;
+            });
+
+            // ---------- BACK TO TOP ----------
+            const backTop = document.getElementById('backTop');
+
+            window.addEventListener('scroll', function() {
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollY > 400) {
+                    backTop.classList.add('visible');
+                } else {
+                    backTop.classList.remove('visible');
+                }
+            });
+
+            backTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ---------- COUNTER ANIMATION ----------
+            const counters = document.querySelectorAll('.counter');
+
+            function animateCounter(el) {
+                const target = parseInt(el.getAttribute('data-target'), 10);
+                const duration = 1800;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease-out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(eased * target);
+                    el.textContent = current;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        el.textContent = target;
+                    }
+                }
+                requestAnimationFrame(updateCounter);
+            }
+
+            // Use Intersection Observer for counters
+            const counterObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        // Only animate once
+                        if (!el.dataset.animated) {
+                            el.dataset.animated = 'true';
+                            animateCounter(el);
+                        }
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            counters.forEach(function(c) {
+                counterObserver.observe(c);
+            });
+
+            // ---------- REVEAL ANIMATIONS ----------
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const revealObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            revealElements.forEach(function(el) {
+                revealObserver.observe(el);
+            });
+
+            // ---------- FAQ ACCORDION ----------
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function(item) {
+                const question = item.querySelector('.question');
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    // Close all
+                    faqItems.forEach(function(i) { i.classList.remove('active'); });
+                    // Open clicked if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+                question.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        question.click();
+                    }
+                });
+            });
+
+            // ---------- CONTACT FORM ----------
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Simple validation
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                // Simulate send
+                const btn = contactForm.querySelector('.btn');
+                const originalText = btn.textContent;
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+
+                setTimeout(function() {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    contactForm.reset();
+                    formSuccess.style.display = 'block';
+                    setTimeout(function() {
+                        formSuccess.style.display = 'none';
+                    }, 5000);
+                }, 1200);
+            });
+
+            // ---------- NEWSLETTER FORM ----------
+            const newsletterForm = document.getElementById('newsletterForm');
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = newsletterForm.querySelector('input[type="email"]');
+                const email = input.value.trim();
+
+                if (!email || !email.includes('@') || !email.includes('.')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                const btn = newsletterForm.querySelector('.btn');
+                const originalText = btn.textContent;
+                btn.textContent = 'Subscribing...';
+                btn.disabled = true;
+
+                setTimeout(function() {
+                    btn.textContent = 'Subscribed ✓';
+                    btn.style.background = '#00D4AA';
+                    input.value = '';
+                    setTimeout(function() {
+                        btn.textContent = originalText;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 2500);
+                }, 1000);
+            });
+
+            // ---------- SMOOTH SCROLL FOR NAV LINKS ----------
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset -
+                            offset;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ---------- PERFORMANCE: lazy load images ----------
+            // All images already have loading="lazy" attribute.
+
+            console.log('✦ SparkClean Pro — Premium Template Loaded Successfully');
+
+        })();
+    </script>
+
+</body>
+</html>
